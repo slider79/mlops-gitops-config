@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wine-classifier
+spec:
+  selector:
+    app: wine-classifier
+  ports:
+    - port: 8000
+      targetPort: 8000
